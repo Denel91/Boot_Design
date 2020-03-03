@@ -1,0 +1,44 @@
+@import "bootstrap-4.4.1/scss/_functions";
+@import "bootstrap-4.4.1/scss/_variables";
+@import "bootstrap-4.4.1/scss/_mixins";
+@import "bootstrap-4.4.1/scss/_grid";
+
+html, body {
+  height: 100%;
+}
+
+h1, small {
+  color: white;
+}
+
+header {
+  height: 60px;
+  padding: 5px;
+  background: #1abc9c;
+}
+
+main {
+  height: calc(100% - 100px);
+}
+
+.container-fluid {
+  height: 100%;
+  background: #ecf0f1;
+  & > div {
+    background: #3498db;
+    margin: 1% 1%;
+    height: 48%;
+    @include media-breakpoint-up(sm) {
+      float: left;
+      padding: 20px;
+      width: 48%;
+    }
+  }
+}
+
+footer {
+  background: #16a085;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}

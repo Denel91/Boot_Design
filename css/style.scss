@@ -1,7 +1,9 @@
-@import "bootstrap-4.4.1/scss/_functions";
-@import "bootstrap-4.4.1/scss/_variables";
-@import "bootstrap-4.4.1/scss/_mixins";
-@import "bootstrap-4.4.1/scss/_grid";
+$container-color: #ecf0f1;
+$box-color: #3498db;
+$footer-color: #16a085;
+$text-color: #2e373f;
+
+@import "bootstrap-4.4.1/scss/bootstrap";
 
 html, body {
   height: 100%;
@@ -12,33 +14,53 @@ h1, small {
 }
 
 header {
-  height: 60px;
-  padding: 5px;
-  background: #1abc9c;
+
+  i.fab {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 0.4rem;
+  }
+
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url(../images/menu.svg);
+    }
 }
 
 main {
-  height: calc(100% - 100px);
-}
+  min-height: calc(100% - 100px);
 
-.container-fluid {
-  height: 100%;
-  background: #ecf0f1;
-  & > div {
-    background: #3498db;
-    margin: 1% 1%;
-    height: 48%;
-    @include media-breakpoint-up(sm) {
-      float: left;
-      padding: 20px;
-      width: 48%;
+  .jumbotron {
+    margin-bottom: 0;
+  }
+
+  .jumbotron .container-fluid .display-3 {
+    color: $text-color;
+    font-size: 3em;
+  }
+
+  .container-fluid {
+    height: 100%;
+    background-color: $container-color;
+    & .row > div {
+      background-color: darken($box-color, 20%);
+      border: 1px solid white;
+      height: 250px;
     }
   }
 }
 
 footer {
-  background: #16a085;
-  height: 40px;
+  background: $footer-color;
+  height: 50px;
   text-align: center;
-  line-height: 40px;
+  line-height: 50px;
 }

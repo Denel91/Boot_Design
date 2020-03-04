@@ -17,9 +17,6 @@
         <!-- stylesheet -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <!-- Bootstrap CSS -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
         <!-- jQuery.js -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
@@ -32,21 +29,76 @@
         <!-- Place your kit's code here -->
         <script src="https://kit.fontawesome.com/25485af4cf.js"></script>
 
-        <title>The HTML5 Bootstrap Page</title>
+        <title>Indipendent Creative Designer</title>
     </head>
+
     <body>
         <header>
-            <h1 class="text-white">Example</h1>
+            <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
+                    <a class="navbar-brand" href="#">
+                        <span class="fab fa-sass"></span>
+                        Brand
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                               <a class="nav-link" href="#">Who I am<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            <!-- End Navbar -->
         </header>
 
         <main>
+            <!-- jumbotron -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1 class="display-3">Questo è un Jumbotron!</h1>
+                    <p class="lead">Un Jumbotron contiene elementi tipografici, oggetti multimediali, immagini e altro ancora.</p>
+                    <hr class="my-4">
+                    <p>Può anche essere utilizzato per call-to-action specifiche</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg"href="#" role="button">Ok, ho capito</a>
+                    </p>
+                 </div>
+            </div>
+
+            <!-- Container -->
             <div class="container-fluid">
-                <div></div>
-                <div></div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4"></div>
+                    <div class="col-sm-6 col-lg-4"></div>
+                    <div class="col-sm-6 col-lg-4"></div>
+                </div>
             </div>
         </main>
 
-        <footer>
+        <footer class="fixed-bottom">
             <small>Homemade</small>
         </footer>
     </body>

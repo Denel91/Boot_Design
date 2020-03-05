@@ -29,15 +29,18 @@
         <!-- Place your kit's code here -->
         <script src="https://kit.fontawesome.com/25485af4cf.js"></script>
 
+        <!-- script.js -->
+        <script src="js/script.js"></script>
+
         <title>Indipendent Creative Designer</title>
     </head>
 
     <body>
         <header>
-            <nav class="nav nav-pills nav-fill nav-justified flex-column flex-sm-row flex-lg-row">
-                <a class="nav-item nav-link active" data-toggle="tab" aria-controls="home" aria-selected="false" href="#tab-home">Home</a>
-                <a class="nav-item nav-link" data-toggle="tab" aria-controls="articoli" aria-selected="true" href="#tab-articoli">Articoli</a>
-                <a class="nav-item nav-link" data-toggle="tab" aria-controls="link" aria-selected="false"  href="#tab-link">Link utili</a>
+            <nav class="nav nav-tabs nav-fill nav-justified flex-column flex-sm-row flex-lg-row" id="myNav">
+                <a class="nav-item nav-link active nav-first" data-toggle="tab" aria-controls="home" aria-selected="false" href="#tab-home">Home</a>
+                <a class="nav-item nav-link nav-second" data-toggle="tab" aria-controls="articoli" aria-selected="true" href="#tab-articoli">Articoli</a>
+                <a class="nav-item nav-link nav-third" data-toggle="tab" aria-controls="link" aria-selected="false"  href="#tab-link">Link utili</a>
                 <a class="nav-item nav-link disabled" href="#">Work-in-progress</a>
             </nav>
 
@@ -46,6 +49,8 @@
                 <div class="tab-pane fade" id="tab-articoli" role="tabpanel" aria-labelledby="tab-articoli"><p>Tab ARTICOLI</p></div>
                 <div class="tab-pane fade" id="tab-link" role="tabpanel" aria-labelledby="tab-link"><p>Tab LINK UTILI</p></div>
             </div>
+
+            <button class="btn btn-primary" id="button-1">Pulsante 1</button>
 
             <!-- Navbar -->
             <!--
@@ -98,7 +103,7 @@
                     <hr class="my-4">
                     <p>Può anche essere utilizzato per call-to-action specifiche</p>
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg"href="#" role="button">Ok, ho capito</a>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Ok, ho capito</a>
                     </p>
                  </div>
             </div>

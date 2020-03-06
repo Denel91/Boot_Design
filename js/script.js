@@ -8,3 +8,9 @@ $(function () {
         console.log("[show.bs.tab] Tab ora visibile: " + $(e.relatedTarget).html());
     })
 });
+
+$(function () {
+    $('[data-toggle="offcanvas"]').on('click', function () {
+        $('.offcanvas-collapse').toggleClass('open')
+    })
+});

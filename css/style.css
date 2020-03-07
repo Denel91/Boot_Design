@@ -11313,7 +11313,8 @@ template {
   display: none !important; }
 
 html, body {
-  height: 100%; }
+  height: 100vh;
+  width: 100%; }
 
 h1, small {
   color: white; }
@@ -11327,8 +11328,6 @@ header .navbar-nav .nav-link {
 header .nav-link {
   display: block;
   padding: 0.5rem 0.4rem; }
-header .navbar-dark .navbar-toggler-icon {
-  background-image: url(../images/menu.svg); }
 
 @media (max-width: 767px) {
   .offcanvas-collapse {
@@ -11349,24 +11348,17 @@ header .navbar-dark .navbar-toggler-icon {
     -webkit-transform: translateX(-1rem);
     transform: translateX(-1rem); } }
 main {
-  min-height: calc(100% - 100px); }
-  main .jumbotron {
-    margin-bottom: 0; }
-  main .jumbotron .container-fluid .display-3, main .jumbotron .container-sm .display-3, main .jumbotron .container-md .display-3, main .jumbotron .container-lg .display-3, main .jumbotron .container-xl .display-3 {
-    color: #2e373f;
-    font-size: 3em; }
-  main .container-fluid, main .container-sm, main .container-md, main .container-lg, main .container-xl {
-    height: 100%;
-    background-color: #ecf0f1; }
-    main .container-fluid .row > div, main .container-sm .row > div, main .container-md .row > div, main .container-lg .row > div, main .container-xl .row > div {
-      background-color: #196090;
-      border: 1px solid white;
-      height: 250px; }
+  height: calc(100% - 98px);
+  flex-grow: 2; }
+
+.container {
+  height: 100%;
+  background: #ecf0f1; }
 
 footer {
-  background: #16a085;
-  height: 50px;
+  background-color: #16a085;
+  height: 40px;
   text-align: center;
-  line-height: 50px; }
+  line-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */

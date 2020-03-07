@@ -60,7 +60,7 @@
                         <span class="fab fa-sass"></span>
                         Brand
                     </a>
-                    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse offcanvas-collapse">
@@ -87,7 +87,7 @@
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2 btn-sm" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="button">Search</button>
                         </form>
                     </div>
                 </nav>
@@ -95,30 +95,23 @@
         </header>
 
         <main role="main">
-            <!-- jumbotron -->
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container-fluid">
-                    <h1 class="display-3">Questo è un Jumbotron!</h1>
-                    <p class="lead">Un Jumbotron contiene elementi tipografici, oggetti multimediali, immagini e altro ancora.</p>
-                    <hr class="my-4">
-                    <p>Può anche essere utilizzato per call-to-action specifiche</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Ok, ho capito</a>
-                    </p>
-                 </div>
+            <div class="container">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control ml-2 mb-2" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control ml-2 mb-2" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary ml-2 mb-2">Submit</button>
+                </form>
             </div>
 
-            <!-- Container -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-4"></div>
-                    <div class="col-sm-6 col-lg-4"></div>
-                    <div class="col-sm-6 col-lg-4"></div>
-                </div>
-            </div>
         </main>
-
-        <footer class="fixed-bottom">
+        <footer>
             <small>Homemade</small>
         </footer>
     </body>

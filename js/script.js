@@ -14,3 +14,13 @@ $(function () {
         $('.offcanvas-collapse').toggleClass('open')
     })
 });
+
+$(document).ready(function () {
+    $('#closeAlert').click(function () {
+        $('#alertSuccess').hide();
+    });
+
+    $('#openAlert').click(function () {
+        $('#alertSuccess').show();
+    });
+});

@@ -95,24 +95,14 @@
         </header>
 
         <main role="main">
-            <div class="form-check ml-4">
-                <input class="form-check-input" type="checkbox" value="" id="termini">
-                <label class="form-check-label small" for="termini">Accetta termini e condizioni</label>
-            </div>
-
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Scegli file</label>
-            </div>
-
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Mobile</span>
+            <div class="container pt-3">
+                <div class="alert alert-danger collapse" id="alertSuccess" role="alert">Click success!
+                    <button type="button" class="close" id="closeAlert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <input type="text" style="max-width: 60px" class="form-control" placeholder="+39" readonly>
-                <input type="text" class="form-control">
+                <button id="openAlert" class="btn btn-primary">Open</button>
             </div>
-
         </main>
         <footer>
             <small>Homemade</small>
